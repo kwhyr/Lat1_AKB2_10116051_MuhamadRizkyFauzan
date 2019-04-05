@@ -9,12 +9,8 @@
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="608dp"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="#f2f2f2"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:background="#f8f8f8">
 
         <ImageView
             android:id="@+id/imageView4"
@@ -27,34 +23,35 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
             android:fontFamily="@font/rubik_regular"
             android:text="Monitory Membantu Anda Mengontrol HP Anak"
             android:textAlignment="center"
             android:textColor="#202020"
             android:textSize="26dp"
             android:textStyle="bold" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="413dp"
-        android:layout_height="122dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
-        app:layout_constraintVertical_bias="0.0">
 
         <Button
             android:id="@+id/button2"
             android:layout_width="346dp"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:background="@drawable/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/stylebutton1"
             android:fontFamily="@font/rubik_regular"
             android:text="Mulai"
             android:textSize="15dp"
             android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView4"
+            android:layout_marginTop="98dp"
+            android:background="#ffffff"
+            tools:layout_editor_absoluteY="610dp" />
     </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

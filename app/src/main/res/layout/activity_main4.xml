@@ -7,8 +7,8 @@
     tools:context=".Main4Activity">
 
     <RelativeLayout
-        android:layout_width="395dp"
-        android:layout_height="715dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
@@ -29,7 +29,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="42dp"
-            android:background="@drawable/button1"
+            android:background="@drawable/stylebutton1"
             android:text="Oke"
             android:textSize="15dp"
             android:textStyle="bold" />

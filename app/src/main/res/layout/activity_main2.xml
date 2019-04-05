@@ -9,13 +9,13 @@
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="558dp"
-        android:background="#f2f2f2"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        android:layout_height="match_parent"
+        android:background="#f8f8f8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
+
 
         <TextView
             android:id="@+id/textView7"
@@ -24,20 +24,20 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="60dp"
             android:fontFamily="@font/rubik_regular"
-            android:textSize="24dp"
+            android:text="Kode Keluarga"
             android:textColor="#202020"
-            android:textStyle="bold"
-            android:text="Kode Keluarga" />
+            android:textSize="24dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik_regular"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="100dp"
-            android:textColor="#202020"
+            android:fontFamily="@font/rubik_regular"
             android:text="Ketikkan kode keluarga yang Ayah Bunda miliki disini"
+            android:textColor="#202020"
             android:textSize="18dp" />
 
         <TextView
@@ -47,9 +47,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="240dp"
             android:fontFamily="@font/rubik_regular"
-            android:textColor="#202020"
             android:text="Dengan menekan tombol masuk berarti Anda menyetujui Ketentuan Pengguna dan Kebijakan Data kami"
             android:textAlignment="center"
+            android:textColor="#202020"
             android:textSize="11dp" />
 
         <EditText
@@ -58,7 +58,7 @@
             android:layout_height="59dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="160dp"
-            android:background="@drawable/edittext"
+            android:background="@drawable/styleedittext"
             android:ems="10"
             android:inputType="textPersonName"
             android:text=""
@@ -70,47 +70,49 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="280dp"
-            android:background="@drawable/button1"
+            android:background="@drawable/stylebutton1"
             android:fontFamily="@font/rubik_regular"
             android:text="Masuk"
             android:textSize="15dp"
             android:textStyle="bold" />
 
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="413dp"
-        android:layout_height="170dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/button3"
+            android:background="#ffffff"
+            android:layout_marginTop="220dp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="346dp"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/button2"
+            android:background="@drawable/stylebutton2"
             android:fontFamily="@font/rubik_regular"
             android:text="Beli Kode Keluatga Disini"
             android:textAllCaps="false"
             android:textColor="#f8f8f8"
             android:textSize="15dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="80dp" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="125dp"
             android:fontFamily="@font/rubik_regular"
             android:text="Belum punya kode keluarga?"
             android:textColor="#525b60"
             android:textSize="18sp" />
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

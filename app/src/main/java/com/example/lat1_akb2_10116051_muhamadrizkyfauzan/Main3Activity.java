@@ -25,7 +25,7 @@ public class Main3Activity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.button2:
+            case R.id.button:
                 String nama = Nama.getText().toString();
 
                 Intent intent = new Intent(Main3Activity.this,Main4Activity.class);
