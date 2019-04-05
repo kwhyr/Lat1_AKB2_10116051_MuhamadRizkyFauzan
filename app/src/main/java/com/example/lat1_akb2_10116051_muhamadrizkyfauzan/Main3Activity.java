@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class Main3Activity extends AppCompatActivity implements View.OnClickListener {
     EditText Nama;
-    Button selanjutnya;
+    Button next;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +18,8 @@ public class Main3Activity extends AppCompatActivity implements View.OnClickList
 
         Nama = (EditText) findViewById(R.id.editText2);
 
-        selanjutnya = (Button) findViewById(R.id.button);
-        selanjutnya.setOnClickListener(this);
+        next = (Button) findViewById(R.id.button);
+        next.setOnClickListener(this);
     }
 
     @Override
@@ -28,10 +28,10 @@ public class Main3Activity extends AppCompatActivity implements View.OnClickList
             case R.id.button:
                 String nama = Nama.getText().toString();
 
-                Intent intent = new Intent(Main3Activity.this,Main4Activity.class);
-                intent.putExtra("nama",nama);
+                Intent start = new Intent(Main3Activity.this,Main4Activity.class);
+                start.putExtra("nama",nama);
 
-                startActivity(intent);
+                startActivity(start);
         }
     }
 }
